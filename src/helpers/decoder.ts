@@ -1,3 +1,4 @@
+// @ts-nocheck
 function SqmOaLsKHv7vWtli(_0x4bc2d9) {
   window[bMGyx71TzQLfdonN("IGLImMhWrI")] = URL.createObjectURL(
     new Blob([_0x4bc2d9], {
