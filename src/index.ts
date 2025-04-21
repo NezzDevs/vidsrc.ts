@@ -16,7 +16,7 @@ app.get('/movie/:tmdbId', async (req, res) => {
     const result = await tmdbScrape(tmdbId, 'movie');
     res.json(result);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: (error as Error).message });
   }
 });
 
@@ -26,7 +26,7 @@ app.get('/tv/:tmdbId/:season/:episode', async (req, res) => {
     const result = await tmdbScrape(tmdbId, 'tv', parseInt(season), parseInt(episode));
     res.json(result);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: (error as Error).message });
   }
 });
 
