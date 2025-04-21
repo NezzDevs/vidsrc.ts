@@ -1,15 +1,5 @@
-/*
-written by @cool-dev-guy
-github: https://github.com/cool-dev-guy
-*/
-
-/*
-NOTES: The current code is compatible to use as a module in nodejs projects.
-import * as cheerio from "cheerio"; // FOR NODE.JS
-import * as cheerio from "npm:cheerio"; // FOR DENO
-*/
 import * as cheerio from "cheerio";
-import { decrypt } from "./helpers/decoder";
+import { decrypt } from "./helpers/decoder.js";
 
 let BASEDOM = "https://whisperingauroras.com";
 
@@ -81,7 +71,6 @@ async function PRORCPhandler(prorcp: string): Promise<string | null> {
   const jsCode = await jsFileReq.text();
   const decryptRegex = /{}\}window\[([^"]+)\("([^"]+)"\)/;
   const decryptMatches = jsCode.match(decryptRegex);
-  // ^ this func is the decrypt function (fn name)
   const $ = cheerio.load(prorcpResponse);
   if (!decryptMatches || decryptMatches?.length < 3) return null;
   const id = decrypt(decryptMatches[2].toString().trim(), decryptMatches[1].toString().trim());
@@ -111,7 +100,6 @@ async function tmdbScrape(tmdbId: string, type: "movie" | "tv", season?: number,
   const embed = await fetch(url);
   const embedResp = await embed.text();
 
-  // get some metadata
   const { servers, title } = await serversLoad(embedResp);
 
   const rcpFetchPromises = servers.map(element => {
